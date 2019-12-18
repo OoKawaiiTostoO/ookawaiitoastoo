@@ -17,6 +17,9 @@
       var areaCode = document.getElementById("theCode").options[document.getElementById("theCode").selectedIndex].value;
       switch (parseInt(areaCode))
       {
+	case 100:
+	 msg = " You have not selected a location";
+		     	 break;
         case 617:
           msg = "Boston's area code is 617";
 			  break;
@@ -51,7 +54,7 @@ Select a City:
 
   <select name="theCode" id="theCode">
 
-    <option value="">-- Select a City --</option>
+    <option value="100">-- Select a City --</option>
     <option value="617">Boston</option>
     <option value="212">Manhattan</option>
     <option value="415">San Francisco</option>
