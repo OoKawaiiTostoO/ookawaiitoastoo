@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<div div ="container">
+<h1>Fortune Teller!</h1>
+<button onclick="tellFortune()"> Press to find out your fortune!</button>
+<button onclick="reset()">Reset</button>
+	</div>
+<br/><br/>
+	<!-- This is where the randam text will go-->
+<div id="fortune"></div>
+<script> var fortune = [
+"you will your true love and get married, have 2 beautiful kids, work in your dream job in California",
+"you will marry into a wealthy family, have 3 kids, and live in paris",
+"you will marry Cassandra, have 4 kids, work in a factory, and eventualy move out of town"
+];
+function tellFortune(){
+// generate a random number between 0 and the number of the array items
+var randomNumber = Math.floor(Math.random() * fortune.lenght);
+
+//print the random number to the console log to make sure it's working
+cosole.log("random number: "+ randomNumber);
+
+//take the fortune at the random spot in the array and insert it into the "Fortune" div
+document.getElementById("fortune").innerHTML = fortunes[randomNumber] ;
+}
+</script>
+	</head>
+<meta charset="utf-8">
+	<title>fortune</title>
+	<body></body>
+		</html>
