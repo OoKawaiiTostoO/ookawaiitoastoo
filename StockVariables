@@ -1,6 +1,7 @@
-<html lang="en">
+<html>
 <head>
 </head>
+<body>
 <script>
 let wendys = 3.00;
 let mcdonalds = 5.25;
